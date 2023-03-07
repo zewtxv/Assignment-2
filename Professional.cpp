@@ -7,6 +7,7 @@
 
 
 using namespace std;
+//professional's default constructor
 Professional::Professional() {
     employmentType = 'P';
     vacationDays = 30;

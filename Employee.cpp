@@ -6,10 +6,10 @@
 #include <string>
 
 using namespace std;
-Employee::Employee() {
+//default constructor, empty as base class
+Employee::Employee() {}
 
-}
-
+//setters
 void Employee::setName(string nameIn) {
     name = nameIn;
 }

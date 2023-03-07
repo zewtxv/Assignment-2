@@ -7,6 +7,8 @@ class Professional : Employee
 {
 public:
     Professional();
+
+    //local variables
     int vacationDays;
     int pay;
 
