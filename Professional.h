@@ -6,11 +6,16 @@
 class Professional : Employee
 {
 public:
-    Professional();
+    Professional(string n, string a, double m);
 
     //local variables
-    int vacationDays;
-    int pay;
+    double weeklySalary();
+    int vacations();
+    double healthCare();
+
+private:
+    double monthlySalary;
+    string name;
 
 };
 #endif //ASSIGNMENT_2_PROFESSIONAL_H

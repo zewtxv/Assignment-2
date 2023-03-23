@@ -3,26 +3,25 @@
 //
 
 #include <string>
+
 using namespace std;
 #ifndef ASSIGNMENT_2_EMPLOYEE_H
 #define ASSIGNMENT_2_EMPLOYEE_H
-class Employee
-{
+
+class Employee {
 public:
     //public variables
-    Employee();
+    Employee(string name, string address);
+
+    virtual double weeklySalary() = 0;
+
+    virtual double healthCare() = 0;
+
+    virtual int vacations() = 0;
+
+private:
     string name;
-    int age;
-    char employmentType;
-    int healthCareContribution;
-
-    //public functions
-    void setName(string nameIn);
-    //PRE: Takes in a desired name to be set as string.
-    //POST: Sets the local string variable to the input
-
-    void setAge(int ageIn);
-    //PRE: takes in a desired age to be set
-    //post: sets a local variable to the input ageIn variable
+    string address;
 };
+
 #endif //ASSIGNMENT_2_EMPLOYEE_H
